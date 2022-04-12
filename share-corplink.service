@@ -1,0 +1,10 @@
+[Unit]
+Description=Share corplink
+
+[Service]
+ExecStart=/usr/bin/share-corplink.sh
+TimeoutSec=300
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
