@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-apt install -y aria2
-
-aria2c -c -s 16 -x 16 -k 1M -j 1 --dir /tmp -o FeiLian.deb https://oss-s3.ifeilian.com/linux/FeiLian_Linux_v2.0.8_r14_b413a2.deb
+wget -O /tmp/FeiLian.deb https://cdn.isealsuite.com/linux/FeiLian_Linux_amd64_v2.1.27_r2711_551547.deb
 dpkg -i /tmp/FeiLian.deb
 apt install -y -f
